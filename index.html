@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#090018">
+<meta name="description" content="ALL SHOP GAMERS - Top Up Game dan Jual Beli Akun Game.">
+<title>ALL SHOP GAMERS 🎮</title>
+
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+ margin:0;background:#080013;color:white;
+ font-family:Arial,sans-serif;padding-bottom:85px;
+}
+header{
+ background:linear-gradient(120deg,#18002e,#080b24);
+ padding:18px 15px;border-bottom:2px solid #8b20ff;
+ display:flex;align-items:center;justify-content:space-between;
+}
+.logo{font-size:21px;font-weight:bold;color:#d5a5ff}
+.online{color:#00ff79;font-size:12px}
+.hero{
+ margin:12px;padding:35px 15px;text-align:center;
+ border-radius:15px;
+ background:linear-gradient(140deg,#350078,#080c35,#7400bb);
+ border:1px solid #a42bff;
+ box-shadow:0 0 20px #7100ff55;
+}
+.hero h1{font-size:29px;color:#e5c5ff}
+.hero p{font-size:13px}
+.music{
+ margin:12px;padding:13px;border:1px solid #a42bff;
+ border-radius:30px;display:flex;align-items:center;
+ justify-content:space-between;background:#16052c;
+}
+button,.btn{
+ border:0;background:#8500ff;color:white;
+ padding:11px 17px;border-radius:25px;
+ font-weight:bold;cursor:pointer;text-decoration:none;
+ display:inline-block;
+}
+.container{padding:12px}
+h2{font-size:19px;color:#d7a5ff}
+.grid{
+ display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
+ gap:12px;
+}
+.card{
+ background:#170b29;border:1px solid #7923bd;
+ border-radius:13px;padding:12px;
+ box-shadow:0 0 10px #7400ff22;
+}
+.game-icon{
+ height:75px;border-radius:9px;
+ background:linear-gradient(135deg,#32105a,#101d50);
+ display:flex;align-items:center;justify-content:center;
+ font-size:35px;
+}
+.card h3{font-size:15px}
+.price{color:#37ff92;font-weight:bold}
+.small{font-size:12px;color:#c5b6d5}
+.contact{
+ margin:20px 12px;padding:20px;border-radius:15px;
+ text-align:center;background:linear-gradient(120deg,#004a28,#071c15);
+ border:1px solid #00ff77;
+}
+.wa{background:#00bd62;color:white}
+footer{text-align:center;color:#aaa;padding:20px;font-size:12px}
+nav{
+ position:fixed;bottom:0;left:0;width:100%;
+ display:flex;justify-content:space-around;
+ background:#10051e;border-top:1px solid #8a22ff;
+ padding:13px 3px;z-index:5;
+}
+nav a{color:white;text-decoration:none;font-size:11px;text-align:center}
+nav span{display:block;font-size:20px;margin-bottom:4px}
+</style>
+</head>
+
+<body id="home">
+
+<header>
+ <div>
+  <div class="logo">👑 ALL SHOP GAMERS</div>
+  <div class="small">TOP UP • JUAL AKUN • ALL GAME</div>
+ </div>
+ <div class="online">🟢 ONLINE</div>
+</header>
+
+<section class="hero">
+ <h1>WELCOME GAMERS 🎮</h1>
+ <p>Tempat Top Up dan Jual Beli Akun Game</p>
+ <p>Murah • Cepat • Aman</p>
+ <a class="btn" href="#topup">BELANJA SEKARANG</a>
+</section>
+
+<div class="music">
+ <div>🎵 <span id="musicName">DJ Gaming Music</span></div>
+ <button onclick="toggleMusic()" id="musicButton">▶ PLAY</button>
+</div>
+
+<audio id="bgMusic" loop preload="none">
+ <source src="musik.mp3" type="audio/mpeg">
+</audio>
+
+<main class="container">
+
+<section id="topup">
+ <h2>🎮 TOP UP SEMUA GAME</h2>
+ <div class="grid">
+
+  <div class="card">
+   <div class="game-icon">🔥</div>
+   <h3>FREE FIRE</h3>
+   <p class="small">Diamond Free Fire</p>
+   <p class="price">Hubungi admin untuk harga</p>
+   <a class="btn" href="#kontak" onclick="setGame('Top Up Free Fire')">PESAN</a>
+  </div>
+
+  <div class="card">
+   <div class="game-icon">⚔️</div>
+   <h3>MOBILE LEGENDS</h3>
+   <p class="small">Diamond ML</p>
+   <p class="price">Hubungi admin untuk harga</p>
+   <a class="btn" href="#kontak" onclick="setGame('Top Up Mobile Legends')">PESAN</a>
+  </div>
+
+  <div class="card">
+   <div class="game-icon">🎯</div>
+   <h3>PUBG MOBILE</h3>
+   <p class="small">UC PUBG</p>
+   <p class="price">Hubungi admin untuk harga</p>
+   <a class="btn" href="#kontak" onclick="setGame('Top Up PUBG Mobile')">PESAN</a>
+  </div>
+
+  <div class="card">
+   <div class="game-icon">🟩</div>
+   <h3>ROBLOX</h3>
+   <p class="small">Robux</p>
+   <p class="price">Hubungi admin untuk harga</p>
+   <a class="btn" href="#kontak" onclick="setGame('Top Up Roblox')">PESAN</a>
+  </div>
+
+ </div>
+</section>
+
+<section id="akun" style="margin-top:30px">
+ <h2>🔥 JUAL AKUN GAME</h2>
+ <div class="grid">
+
+  <div class="card">
+   <div class="game-icon">👑</div>
+   <h3>Akun Free Fire Sultan</h3>
+   <p class="small">Spesifikasi: isi keterangan akun.</p>
+   <p class="price">Rp250.000</p>
+   <a class="btn" href="#kontak" onclick="setGame('Beli Akun Free Fire Sultan - Rp250.000')">TANYA WA</a>
+  </div>
+
+  <div class="card">
+   <div class="game-icon">💎</div>
+   <h3>Akun Mobile Legends</h3>
+   <p class="small">Spesifikasi: isi keterangan akun.</p>
+   <p class="price">Rp180.000</p>
+   <a class="btn" href="#kontak" onclick="setGame('Beli Akun Mobile Legends - Rp180.000')">TANYA WA</a>
+  </div>
+
+ </div>
+</section>
+
+</main>
+
+<section class="contact" id="kontak">
+ <h2>💬 HUBUNGI ADMIN</h2>
+ <p>Ingin top up atau membeli akun?</p>
+ <p>Silakan hubungi admin ALL SHOP GAMERS.</p>
+ <a class="btn wa" id="waButton"
+ href="https://wa.me/6285545263411?text=Halo%20Admin%20ALL%20SHOP%20GAMERS"
+ target="_blank" rel="noopener">
+ CHAT WHATSAPP ADMIN
+ </a>
+</section>
+
+<footer>
+ © 2026 ALL SHOP GAMERS 🎮<br>
+ All Rights Reserved.
+</footer>
+
+<nav>
+ <a href="#home"><span>🏠</span>Home</a>
+ <a href="#topup"><span>💎</span>Top Up</a>
+ <a href="#akun"><span>🎮</span>Jual Akun</a>
+ <a href="#kontak"><span>💬</span>Kontak</a>
+</nav>
+
+<script>
+const music=document.getElementById("bgMusic");
+const musicButton=document.getElementById("musicButton");
+
+function toggleMusic(){
+ if(music.paused){
+  music.play().then(()=>{
+   musicButton.textContent="⏸ PAUSE";
+  }).catch(()=>{
+   alert("File musik.mp3 belum tersedia atau tidak dapat diputar.");
+  });
+ }else{
+  music.pause();
+  musicButton.textContent="▶ PLAY";
+ }
+}
+
+function setGame(game){
+ document.getElementById("waButton").href=
+ "https://wa.me/6285545263411?text="+
+ encodeURIComponent(
+  "Halo Admin ALL SHOP GAMERS, saya tertarik: "+game+
+  ". Apakah masih tersedia?"
+ );
+}
+</script>
+
+</body>
+</html>
